@@ -5,6 +5,11 @@ This project provide a simple way to create a pdf from your projects documentati
 combining the strictness of markdown syntax, the flexibility of html/css and the portability of a pdf presentation. Your
 markdown documentation is convert to html and magically transform to pdf by `wkhtmltopdf` package.
 
+Installation
+----
+
+    > npm install m2pdb
+
 Requirements
 ----
 
@@ -14,7 +19,7 @@ Requirements
 Usage
 ----
 
-    > node index.js src_path output.pdf
+    > m2pdb src_path output.pdf
 
 In `src_path` the script must find some files :
 
