@@ -1,0 +1,20 @@
+{
+  "name": "m2pdb",
+  "description": "markdown to pdf documentation builder",
+  "keywords": ["markdown", "pdf", "documentation"],
+  "version": "0.0.1",
+  "homepage": "https://github.com/tdebarochez/m2pdb",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tdebarochez/m2pdb.git"
+  },
+  "author": "Thomas Debarochez <thomas.barochez+npm@gmail.com>",
+  "main": "index.js",
+  "directories": {
+    "lib": "."
+  },
+  "engines": {
+    "node": "*"
+  },
+  "bin": { "m2pdb": "./index.js" } 
+}
