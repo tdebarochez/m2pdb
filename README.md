@@ -1,9 +1,7 @@
 m2pdb - Markdown To Pdf Documentation Builder
 ====
 
-This project provide a simple way to create a pdf from your projects documentation wrote with markdown syntax. It's
-combining the strictness of markdown syntax, the flexibility of html/css and the portability of a pdf presentation. Your
-markdown documentation is convert to html and magically transform to pdf by `wkhtmltopdf` package.
+This project provide a simple way to create a pdf from your projects documentation wrote with markdown syntax. It's combining the strictness of markdown syntax, the flexibility of html/css and the portability of a pdf presentation. Your markdown documentation is converted to html and magically transformed to pdf by `wkhtmltopdf` package.
 
 Installation
 ----
@@ -27,7 +25,7 @@ In `src_path` the script must find some files :
 - `layout.html`: main layout use for all your document. Content will replace the `{{content}}` variable.
 - + all of your markdown files (with this extensions : .md or .markdown).
 
-You can try with the embed example of Node.JS documentaton by running this line :
+You can try with the embedded example of Node.JS documentaton by running this line :
 
     > node index.js node_doc/ node.pdf
 
