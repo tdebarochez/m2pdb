@@ -36,7 +36,7 @@ function proceed(file) {
   });
 }
 
-if (!path.existsSync(build_path)) {
+if (!fs.existsSync(build_path)) {
   fs.mkdirSync(build_path, 0755);
   console.log(build_path + ' created\n');
 }

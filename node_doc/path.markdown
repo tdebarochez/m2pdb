@@ -104,16 +104,16 @@ the first character, then it returns an empty string.  Examples:
     // returns
     ''
 
-### path.exists(p, [callback])
+### fs.exists(p, [callback])
 
 Test whether or not the given path exists.  Then, call the `callback` argument
 with either true or false. Example:
 
-    path.exists('/etc/passwd', function (exists) {
+    fs.exists('/etc/passwd', function (exists) {
       util.debug(exists ? "it's there" : "no passwd!");
     });
 
 
-### path.existsSync(p)
+### fs.existsSync(p)
 
-Synchronous version of `path.exists`.
+Synchronous version of `fs.exists`.
