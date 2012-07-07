@@ -5,7 +5,7 @@ Use `require('tty')` to access this module.
 Example:
 
     var tty = require('tty');
-    tty.setRawMode(true);
+    process.stdin.setRawMode(true);
     process.stdin.resume();
     process.stdin.on('keypress', function(char, key) {
       if (key && key.ctrl && key.name == 'c') {
@@ -32,7 +32,7 @@ Returns `true` or `false` depending on if the `fd` is associated with a
 terminal.
 
 
-### tty.setRawMode(mode)
+### process.stdin.setRawMode(mode)
 
 `mode` should be `true` or `false`. This sets the properties of the current
 process's stdin fd to act either as a raw device or default.
