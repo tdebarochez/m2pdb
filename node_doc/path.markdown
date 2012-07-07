@@ -114,6 +114,6 @@ with either true or false. Example:
     });
 
 
-### path.existsSync(p)
+### fs.existsSync(p)
 
 Synchronous version of `fs.exists`.
