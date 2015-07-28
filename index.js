@@ -21,7 +21,7 @@ var file
   , args = [html_tmp_filename, output_filename]
   , files = fs.readdirSync(src_path)
   , now = new Date
-  , month = now.getMonth() <= 9 ? '0' + now.getMonth() : now.getMonth()
+  , month = (now.getMonth()+1) <= 9 ? '0' + (now.getMonth()+1) : (now.getMonth()+1)
   , day = now.getDate() <= 9 ? '0' + now.getDate() : now.getDate();
 
 function proceed(file) {
@@ -36,7 +36,7 @@ function proceed(file) {
   });
 }
 
-if (!path.existsSync(build_path)) {
+if (!fs.existsSync(build_path)) {
   fs.mkdirSync(build_path, 0755);
   console.log(build_path + ' created\n');
 }
