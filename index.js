@@ -17,7 +17,7 @@ var file
   , sources = {}
   , layout = fs.readFileSync(path.join(src_path, 'layout.html')).toString()
   , conf = JSON.parse(fs.readFileSync(path.join(src_path, "settings.json")))
-  , opts = {customFds: [process.stdin, process.stdout, process.stderr]}
+  , opts = {stdio: 'inherit'}
   , args = [html_tmp_filename, output_filename]
   , files = fs.readdirSync(src_path)
   , now = new Date
