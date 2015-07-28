@@ -2,7 +2,7 @@
   "name": "m2pdb",
   "description": "markdown to pdf documentation builder",
   "keywords": ["markdown", "pdf", "documentation"],
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/tdebarochez/m2pdb",
   "repository": {
     "type": "git",
